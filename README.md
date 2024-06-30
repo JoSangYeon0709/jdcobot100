@@ -17,7 +17,7 @@ This repository contains files for use of the JDcobot 100 SDK.
    
 ### S/W
 1. Download [jdcobot 100 repository](https://github.com/JoSangYeon0709/jdcobot100/archive/refs/heads/main.zip) and unzip it
-2. Install the [Arduino IDE](https://www.arduino.cc/en/software){:target="_blank"} appropriate for your computer
+2. Install the <a href="https://www.arduino.cc/en/software" target="_blank">Arduino IDE</a> appropriate for your computer
 3. Please upload this arduino_code/ jdcobot_100.ino to Arduino
 4. Proceed with the code step by step in python_code/step_by_step_code.
    
