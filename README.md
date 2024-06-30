@@ -7,8 +7,9 @@ This repository contains metapackages and files for installation/use of the JDco
 
 Installation
 ------------
-| aaaa
-| bbbbb
+| Please aaaa
+| bbbb
+
 
 Code & Tickets
 --------------
