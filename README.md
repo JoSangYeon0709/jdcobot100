@@ -7,9 +7,10 @@ This repository contains files for use of the JDcobot 100 SDK.
 
 ## How to use jdcobot 100?
 
-###H/W
+### H/W
 1. assembly
-###S/W
+   
+### S/W
 1. Download [jdcobot 100 repository](https://github.com/JoSangYeon0709/jdcobot100/archive/refs/heads/main.zip) and unzip it
 2. Install the [Arduino IDE](https://www.arduino.cc/en/software) appropriate for your computer
 3. Please upload this arduino_code/ jdcobot_100.ino to Arduino
