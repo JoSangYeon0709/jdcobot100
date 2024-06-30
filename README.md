@@ -3,9 +3,11 @@
     <img src="assets/jdcobot100.png" style="align:centre" width="35%">
 </p>
 
-The JDcobot 100 SDK provides a platform for development of custom applications for the JDcobot 100.
-
+The JDcobot 100 is a simple manipulator that uses Arduino and four MG90S servos.  
+You can use a computer to move the motors to desired angles through the serial port.  
+The JDcobot 100 SDK provides a platform for development of custom applications for the JDcobot 100.  
 This repository contains files for use of the JDcobot 100 SDK.
+
 
 
 ## How to use JDcobot 100?
