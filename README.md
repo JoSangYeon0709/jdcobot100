@@ -38,7 +38,3 @@ This repository contains files for use of the JDcobot 100 SDK.
 |                         |URI                                                                                      |
 |-------------------------|-----------------------------------------------------------------------------------------|
 | jdcobot_100_description | [https://github.com/JoSangYeon0709/jdcobot_100_description](https://github.com/JoSangYeon0709/jdcobot_100_description) |
-
-## Latest Release Information
-
-aa
