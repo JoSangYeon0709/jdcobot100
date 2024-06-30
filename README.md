@@ -40,6 +40,19 @@ This repository contains files for use of the JDcobot 100 SDK.
    └── robot_sequxnce_move_example            jdcobot 100 sequence move example code
    └── sample_URDF                            robot URDF file sample
    └── step_by_step_code                      code with added functions step by step to move JDcobot 100
+      └── tk1_drop_down_serial_port.py
+      └── tk2_add_btn_fram.py
+      └── tk3_add_grid.py
+      └── tk4_add_servo_value.py
+      └── tk5_add_slider.py
+      └── tk6_add_robot_run_stop.py
+      └── tk7_add_base_servo_ctrl.py
+      └── tk8_add_serial_seletor.py
+      └── tk9_inverse_kinematic.py
+      └── tk10_add_slider_all.py
+      └── tk11_add_robot_reset.py
+      └── tk12_add_save_position.py
+      └── tk13_add_trajectory.py
 ```
 
 
