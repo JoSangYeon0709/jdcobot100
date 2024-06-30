@@ -1,48 +1,34 @@
-JDcobot 100 SDK
-==============
+# JDcobot 100 SDK
 
-TheJDcobot 100 SDK provides a platform for development of custom applications for the JDcobot 100
+The JDcobot 100 SDK provides a platform for development of custom applications for the JDcobot 100.
 
-This repository contains metapackages and files for installation/use of the JDcobot 100 SDK
+This repository contains metapackages and files for installation/use of the JDcobot 100 SDK.
 
-Installation
-------------
-| Please aaaa
-| bbbb
+## Installation
 
+- Please aaaa
+- bbbb
 
-Code & Tickets
---------------
+## Code & Tickets
 
-+-----------------+----------------------------------------------------------------+
-| Documentation   | a                            |
-+-----------------+----------------------------------------------------------------+
-| Issues          | https://github.com/JoSangYeon0709/jdcobot100/issues               |
-+-----------------+----------------------------------------------------------------+
+| Documentation   | a                                                                 |
+|-----------------|-------------------------------------------------------------------|
+| Issues          | [https://github.com/JoSangYeon0709/jdcobot100/issues](https://github.com/JoSangYeon0709/jdcobot100/issues) |
 
-
-JDcobot100 Repository Overview
---------------------------
-
-::
-
-     .
-     |
-     +-- arduino_code/              jdcobot 100 arduino code
-     |
-     +-- python_code/              jdcobot 100 python code
-     
+## JDcobot100 Repository Overview
+.
+|
++-- arduino_code/ jdcobot 100 arduino code
+|
++-- python_code/ jdcobot 100 python code
 
 
+## Other JDcobot 100 Repositories
 
-Other JDcobot 100 Repositories
--------------------------
-+------------------+-----------------------------------------------------+
-| jdcobot_100_description | https://github.com/JoSangYeon0709/jdcobot_100_description |
-+------------------+-----------------------------------------------------+
+| Repository              | URL                                                                                     |
+|-------------------------|-----------------------------------------------------------------------------------------|
+| jdcobot_100_description | [https://github.com/JoSangYeon0709/jdcobot_100_description](https://github.com/JoSangYeon0709/jdcobot_100_description) |
 
-
-Latest Release Information
---------------------------
+## Latest Release Information
 
 aa
