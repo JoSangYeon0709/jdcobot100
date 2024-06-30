@@ -16,6 +16,7 @@ This repository contains metapackages and files for installation/use of the JDco
 | Issues          | [https://github.com/JoSangYeon0709/jdcobot100/issues](https://github.com/JoSangYeon0709/jdcobot100/issues) |
 
 ## JDcobot100 Repository Overview
+::
 .
 |
 +-- arduino_code/ jdcobot 100 arduino code
