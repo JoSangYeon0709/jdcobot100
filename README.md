@@ -17,11 +17,16 @@ This repository contains metapackages and files for installation/use of the JDco
 
 ## JDcobot100 Repository Overview
 ::
-.
-|
-+-- arduino_code/ jdcobot 100 arduino code
-|
-+-- python_code/ jdcobot 100 python code
+
+     .
+     |
+     +-- baxter_sdk/              baxter metapackage containing all baxter sdk packages
+     |
+     +-- baxter_sdk.rosinstall    rosinstall script containing all baxter sdk packages
+     |
+     +-- baxter.sh                convenient environment initialization script
+
+
 
 
 ## Other JDcobot 100 Repositories
