@@ -21,7 +21,7 @@ This repository contains files for use of the JDcobot 100 SDK.
 3. Please upload this arduino_code/ jdcobot_100.ino to Arduino
 4. Proceed with the code step by step in python_code/step_by_step_code.
    
-"Do not open the Serial Monitor in the Arduino IDE when controlling it with Python code!"
+! Do not open the Serial Monitor in the Arduino IDE when controlling it with Python code. !
 
 
 ## Code & Tickets
