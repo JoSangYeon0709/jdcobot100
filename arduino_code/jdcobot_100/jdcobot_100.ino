@@ -88,6 +88,7 @@ void clear_oled(){
   u8x8.drawString(0,3,"                   ");
   u8x8.drawString(0,4,"                   ");
   u8x8.drawString(0,5,"                   ");
+  u8x8.drawString(0,6,"                   ");
   delay(100);
 }
 
@@ -135,7 +136,7 @@ void loop() {
         Serial.print(shoulderAngle);
         Serial.print('c');
         Serial.print(upperarmAngle);
-        Serial.println('d');
+        Serial.print('d');
         Serial.print(forearmAngle);
         Serial.print('e');
         Serial.print(gripperAngle);
@@ -145,37 +146,38 @@ void loop() {
         int first = inString.indexOf('a');
         int second = inString.indexOf('b');
         base_str = inString.substring(first+1, second);
-        baseAngle = base_str.toInt();    
-        Serial.print(baseAngle);
-        Serial.print(" ");
+        baseAngle = base_str.toInt();
         // angle 1
         first = inString.indexOf('b');
         second = inString.indexOf('c');
         shoulder_str = inString.substring(first+1, second);
         shoulderAngle = shoulder_str.toInt();
-        Serial.print(shoulderAngle);
-        Serial.print(" ");
         // angle 2
         first = inString.indexOf('c');
         second = inString.indexOf('d');
         upperarm_str = inString.substring(first+1, second);
         upperarmAngle = upperarm_str.toInt();
-        Serial.print(upperarmAngle);
-        Serial.print(" ");
         // angle 3
         first = inString.indexOf('d');
         second = inString.indexOf('e');
         forearm_str = inString.substring(first+1, second);
         forearmAngle = forearm_str.toInt();
-        Serial.print(forearmAngle);
-        Serial.print(" ");
         // angle 4
         first = inString.indexOf('e');
         second = inString.indexOf('f');
         gripper_str = inString.substring(first+1, second);
         gripperAngle = gripper_str.toInt();
+        Serial.print('a');
+        Serial.print(baseAngle);
+        Serial.print('b');
+        Serial.print(shoulderAngle);
+        Serial.print('c');
+        Serial.print(upperarmAngle);
+        Serial.print('d');
+        Serial.print(forearmAngle);
+        Serial.print('e');
         Serial.print(gripperAngle);
-        Serial.println(" ");
+        Serial.println('f');
         // These values are the status of whether or not the joint has reached its position yet
         // variables declared inside of some part of the program, like these, are called "local Variables"
         int status1 = 0;  //base status
