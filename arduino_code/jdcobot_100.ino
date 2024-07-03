@@ -37,8 +37,8 @@ int gripperAngle = 90;
 
 String base_str;
 String shoulder_str;
-String forearm_str;
 String upperarm_str;
+String forearm_str;
 String gripper_str;
 String inString;
 
@@ -98,10 +98,10 @@ void setup() {
   base.write(baseAngle);
   shoulder.attach(5);
   shoulder.write(shoulderAngle);
-  forearm.attach(6);
-  forearm.write(forearmAngle);
-  upperarm.attach(9);
+  upperarm.attach(6);
   upperarm.write(upperarmAngle);
+  forearm.attach(9);
+  forearm.write(forearmAngle);
   gripper.attach(10);
   gripper.write(gripperAngle);
   
@@ -121,7 +121,7 @@ void setup() {
 
 void loop() {
   delay(100);
-  Serial.println(baseAngle);
+//Serial.println(baseAngle);
   if (Serial.available() > 0){  
     if(Serial.available()){
       inString = Serial.readStringUntil('\n');
@@ -158,15 +158,17 @@ void loop() {
         // angle 2
         first = inString.indexOf('c');
         second = inString.indexOf('d');
-        forearm_str = inString.substring(first+1, second);
-        forearmAngle = forearm_str.toInt();
-        Serial.print(forearmAngle);
-        // angle 3
-        first = inString.indexOf('d');
-        second = inString.indexOf('e');
         upperarm_str = inString.substring(first+1, second);
         upperarmAngle = upperarm_str.toInt();
         Serial.print(upperarmAngle);
+        Serial.print(" ");
+        // angle 3
+        first = inString.indexOf('d');
+        second = inString.indexOf('e');
+        forearm_str = inString.substring(first+1, second);
+        forearmAngle = forearm_str.toInt();
+        Serial.print(forearmAngle);
+        Serial.print(" ");
         // angle 4
         first = inString.indexOf('e');
         second = inString.indexOf('f');
@@ -189,8 +191,8 @@ void loop() {
           //This block of code uses "Functions" to make is more condensed.
           status1 = servoParallelControl(baseAngle, base, 20);         
           status2 = servoParallelControl(shoulderAngle, shoulder, 20);
-          status3 = servoParallelControl(upperarmAngle, forearm, 20);      
-          status4 = servoParallelControl(forearmAngle, upperarm, 20);
+          status3 = servoParallelControl(upperarmAngle, upperarm, 20);      
+          status4 = servoParallelControl(forearmAngle, forearm, 20);
           status5 = servoParallelControl(gripperAngle, gripper, 20);  
 
           // Check whether all the joints have reached their positions
@@ -207,8 +209,8 @@ void loop() {
         u8x8.drawString(0,1, ("     " + part2).c_str());
         u8x8.drawString(0,2, ("base:      " + base_str).c_str());
         u8x8.drawString(0,3, ("shoulder:  " + shoulder_str).c_str());
-        u8x8.drawString(0,4, ("foreArm:   " + forearm_str).c_str());
-        u8x8.drawString(0,5, ("upperArm:  " + upperarm_str).c_str());
+        u8x8.drawString(0,4, ("upperArm:  " + upperarm_str).c_str());
+        u8x8.drawString(0,5, ("foreArm:   " + forearm_str).c_str());
         u8x8.drawString(0,6, ("gripper:   " + gripper_str).c_str());
 
         delay(100);
@@ -225,8 +227,8 @@ void loop() {
             //This block of code uses "Functions" to make is more condensed.
             status1 = servoParallelControl(90, base, 20);         
             status2 = servoParallelControl(90, shoulder, 20);
-            status3 = servoParallelControl(90, forearm, 20);      
-            status4 = servoParallelControl(90, upperarm, 20);
+            status3 = servoParallelControl(90, upperarm, 20);      
+            status4 = servoParallelControl(90, forearm, 20);
             status5 = servoParallelControl(90, gripper, 20);  
 
             // Check whether all the joints have reached their positions
