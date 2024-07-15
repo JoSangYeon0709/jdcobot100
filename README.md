@@ -23,6 +23,12 @@ This repository contains files for use of the JDcobot 100 SDK.
    
 ! Do not open the Serial Monitor in the Arduino IDE when controlling it with Python code. !
 
+## Dependency
+### Arduino IDE
+[u8g2](https://github.com/olikraus/u8g2)
+
+### Python
+pip install pyserial
 
 ## Code & Tickets
 ||URI|
