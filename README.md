@@ -34,7 +34,9 @@ This repository contains files for use of the JDcobot 100 SDK.
 ## JDcobot100 Repository Overview
 ```
 ├── assets                                    Images, photos, and assembly manual of JDcobot 100
-├── arduino_code                              JDcobot 100 arduino code
+├── arduino_code                              
+|  └── jdcobot_100                            JDcobot 100 arduino code
+|  └── jdcobot_100_v2                         Enhanced Servo Motor Control
 └── python_code                               JDcobot 100 python code
    └── robot_UI_reference_code                UI reference code for jdcobot 100 robot using tkinter
    └── robot_sequxnce_move_example            jdcobot 100 sequence move example code
