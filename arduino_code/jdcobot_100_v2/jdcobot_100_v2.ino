@@ -16,6 +16,7 @@ int gripperAngle = 90;
 int delay_time = 15;
 int delay_time_setup = 0;
 int motor_step = 1;
+bool stop_flag = false;
 
 String base_str;
 String shoulder_str;
@@ -49,7 +50,6 @@ void setup() {
   u8x8.print("standby");
   u8x8.setCursor(0, 4);
   u8x8.print("          ");
-
 }
 
 void loop() {
@@ -91,7 +91,8 @@ void loop() {
       Serial.print(gripperAngle);
       Serial.println('f');
 
-      while (true) {
+      stop_flag = false;
+      while (!stop_flag) {
         bool done = true;
         done &= moveServo(base, baseAngle, motor_step);
         done &= moveServo(shoulder, shoulderAngle, motor_step);
@@ -104,19 +105,27 @@ void loop() {
       display_angles();
     } else if (cmd == '3') {
       resetServos();
+    } else if (cmd == '4') {
+      clear_oled();
+      u8x8.drawString(0, 0, "stop servo motors");
+      stop_flag = true;
     }
   }
 }
 
 bool moveServo(Servo& servo, int targetAngle, int step) {
+  if (stop_flag) {
+    return true; // 정지 명령이 들어오면 현재 상태 유지
+  }
+  
   int currentAngle = servo.read();
-    if (currentAngle < targetAngle) {
-      servo.write(currentAngle + step);
-      return false;
-    } else if (currentAngle > targetAngle) {
-      servo.write(currentAngle - step);
-      return false;
-    }
+  if (currentAngle < targetAngle) {
+    servo.write(currentAngle + step);
+    return false;
+  } else if (currentAngle > targetAngle) {
+    servo.write(currentAngle - step);
+    return false;
+  }
   return true;
 }
 
@@ -133,7 +142,7 @@ void resetServos() {
   } while (!done);
 }
 
-void display_angles(){
+void display_angles() {
   clear_oled();
   u8x8.setFont(u8x8_font_chroma48medium8_r);
   u8x8.drawString(0, 0, ("sig: " + inString.substring(0, 10)).c_str());
