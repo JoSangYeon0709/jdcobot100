@@ -34,26 +34,17 @@ def run_robot():
     print(cmd.encode())
 
 def stop_robot():
-    cmd = '1abcdef\n'
+    cmd = '4abcdef\n'
     seq.write(cmd.encode())
-    while True:
-        if seq.in_waiting > 0:
-            data = seq.readline().decode('utf-8').strip()
-            for i in range(slide_num):
-                angles[i] = data[data.find(chr(97+i))+1:data.find(chr(98+i))]
-                entry_boxes[i].delete(0, 'end')
-                entry_boxes[i].insert(0, str(int(angles[i])))
-                slides[i].set(angles[i])
-            print(angles)
-            break
-
+    print("stop")
+    
 def reset_robot():
     cmd = '3abcdef\n'
     seq.write(cmd.encode())
     print(cmd.encode())
     for i in range(slide_num):
         entry_boxes[i].delete(0, 'end')
-        entry_boxes[i].insert(0, '90')
+        entry_boxes[i].insert(0, '90') 
         slides[i].set(90)
 
 def execute_trajectory():
