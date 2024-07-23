@@ -3,7 +3,7 @@
     <img src="assets/jdcobot100.png" style="align:centre" width="35%">
 </p>
 
-The JDcobot 100 is a simple manipulator that uses Arduino and four MG90S servos.  
+The JDcobot 100 is a simple manipulator that uses Arduino and SG90, MG90S,MG996R servos.  
 You can use a computer to move the motors to desired angles through the serial port.  
 The JDcobot 100 SDK provides a platform for development of custom applications for the JDcobot 100.  
 This repository contains files for use of the JDcobot 100 SDK.
