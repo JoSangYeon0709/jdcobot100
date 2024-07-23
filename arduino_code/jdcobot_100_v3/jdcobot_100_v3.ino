@@ -131,7 +131,7 @@ void resetServos() {
   do {
     done = true;
     done &= moveServo(base, 90, motor_step);
-    done &= moveServo(shoulder, 90, motor_step);
+    done &= moveServo(shoulder, 92, motor_step);
     done &= moveServo(upperarm, 90, motor_step);
     done &= moveServo(forearm, 90, motor_step);
     done &= moveServo(gripper, 90, motor_step);
