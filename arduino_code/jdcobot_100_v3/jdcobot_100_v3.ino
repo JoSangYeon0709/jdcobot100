@@ -82,6 +82,13 @@ void loop() {
       upperarmAngle = inString.substring(inString.indexOf('c') + 1, inString.indexOf('d')).toInt();
       forearmAngle = inString.substring(inString.indexOf('d') + 1, inString.indexOf('e')).toInt();
       gripperAngle = inString.substring(inString.indexOf('e') + 1, inString.indexOf('f')).toInt();
+      
+      baseAngle = constrain(baseAngle,0,180);
+      shoulderAngle = constrain(shoulderAngle,0,180);
+      upperarmAngle = constrain(upperarmAngle,0,180);
+      forearmAngle = constrain(forearmAngle,0,180);
+      gripperAngle = constrain(gripperAngle,0,180);
+      
       serial_print();
 
       stop_flag = false;
