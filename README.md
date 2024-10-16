@@ -56,11 +56,10 @@ pip install pyserial
       └── tk6_add_robot_run_stop.py
       └── tk7_add_base_servo_ctrl.py
       └── tk8_add_serial_seletor.py
-      └── tk9_inverse_kinematic.py
-      └── tk10_add_slider_all.py
-      └── tk11_add_robot_reset.py
-      └── tk12_add_save_position.py
-      └── tk13_add_trajectory.py
+      └── tk9_add_slider_all.py
+      └── tk10_add_robot_reset.py
+      └── tk11_add_save_position.py
+      └── tk12_add_trajectory.py
 ```
 
 
